@@ -3,22 +3,20 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Phase One - How to Run Docker
 
-* Ruby version
+1.) To run Docker container, cd into 'ShopApp'
 
-* System dependencies
+2.) Run the following in the temrinal: docker-compose build
 
-* Configuration
+3.) Next, run the following: docker-compose up
 
-* Database creation
+Phase Two - How to Run Rails
 
-* Database initialization
+4.) Open a new terminal and create database:
 
-* How to run the test suite
+    docker-compose run web rake db:create
 
-* Services (job queues, cache servers, search engines, etc.)
+5.) Visit localhost:3000 to see that you're running rails!
 
-* Deployment instructions
-
-* ...
+    Phase Three - How to Run React
